@@ -5,6 +5,7 @@ import React, { Component } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
+import Footer from "./components/Footer";
 class App extends Component {
   state = {
     sections: [
@@ -81,7 +82,6 @@ class App extends Component {
     ],
   };
   render() {
-    // console.log(Array.isArray(this.state.sections));
     const {
       experience,
       education,
@@ -94,7 +94,7 @@ class App extends Component {
         <Header />
         <Hero />
 {        this.state.sections.map(entry=>{return <Section entry={entry}/>})}
-        
+        <Footer/>
       </>
     );
   }

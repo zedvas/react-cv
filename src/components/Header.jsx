@@ -4,7 +4,7 @@ class Header extends Component {
   state = {};
   render() {
     return (
-      <>
+      <div className="header">
         <Icon />
         <Icon
           width={"40px"}
@@ -22,7 +22,7 @@ class Header extends Component {
             "https://static.vecteezy.com/system/resources/previews/009/189/920/original/eps10-pink-hamburger-menu-bar-line-art-icon-or-logo-in-thick-rounded-circle-isolated-on-white-background-free-vector.jpg"
           }
         />
-      </>
+      </div>
     );
   }
 }
