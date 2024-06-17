@@ -13,26 +13,12 @@ class Section extends Component {
       role,
       text,
     } = entry;
-    for (const key in entry) {console.log(key)} //works fine but want to produce dom elem for this
 
     return (
-      <div>
-      {/* {for (const key in entry) {
-         {return
-          <h2>{key}</h2>
-          }
-          }
-          }               
- */  }
-        {/* {jobTitle ? <h3>{jobTitle}</h3> : ""} */  }
-
-        {/* {for (const prop in entry) {
-                return (
-                    <h2>{prop}</h2>
-                    )
-                    }
-            } */                     
-            }
+      <div> {Object.entries(entry).map(item=> {
+        return <p>{item[0]}</p>
+        })}
+  
       </div>
     );
   }
